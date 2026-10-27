@@ -14,6 +14,7 @@ resource "aws_subnet" "private" {
   availability_zone = var.private_subnet_az
   tags = {
     Name = "main-subnet"
+    Environment = "development"
   }
 }
 
@@ -24,6 +25,7 @@ resource "aws_subnet" "public" {
   map_public_ip_on_launch = true
   tags = {
     Name = "main-public-subnet"
+    Environment = "development"
   }
 }
 
