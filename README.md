@@ -43,8 +43,6 @@ This repository implements a **VCS-Driven GitOps workflow** integrated with **HC
 ├── main.tf                # Core AWS VPC, private subnet, and public subnet definitions
 ├── variables.tf           # Parameterized CIDR blocks and Availability Zone variables
 ├── versions.tf            # HCP Terraform cloud backend & AWS provider version constraints
-├── outputs.tf             # Exported VPC and Subnet IDs for downstream module consumption
-├── .terraform.lock.hcl    # Cryptographic provider dependency lockfile for remote runners
 ├── .gitignore             # Excludes local .tfstate, .tfvars secrets, and provider binaries
 └── README.md              # Architecture and GitOps operational documentation
 ```
